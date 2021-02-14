@@ -1,0 +1,195 @@
+/* Global */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 16px;
+  font-weight: 400px;
+  line-height: 24px;
+  color: #333;
+  background: #fff;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* HTML Elements */
+div {
+  display: block;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  border: 0;
+  vertical-align: baseline;
+  background: transparent;
+}
+
+h1 {
+  display: block;
+  font-size: 2em;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.67em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  font-weight: bold;
+}
+
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+span {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  border: 0;
+  background: transparent;
+}
+
+/* Classes */
+
+/* !!! Container */
+.container-large {
+  box-sizing: border-box;
+  width: 100%;
+  margin: 0 auto;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+/* !!! signed-out */
+.signed-out-masthead {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column-reverse;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.signed-out-masthead .text-content {
+  margin-top: 20px;
+  max-width: 624px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.signed-out-masthead .text-content h1 {
+  font-size: 24px;
+  font-weight: 700px;
+  line-height: 29px;
+}
+
+.signed-out-masthead .text-content p {
+  margin: 16px 0;
+}
+
+.signed-out-masthead .shot-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  width: 100%;
+}
+
+.signed-out-masthead .shot-content .shot-image {
+  background-image: url("https://cdn.dribbble.com/assets/art-banners/romainbriaux-db195db2c89f7f239f555901e8578e08987c000329287238e961b378a62a15e5.png");
+  width: 100%;
+  height: 300px;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.signed-out-masthead .shot-content .user-credit {
+  margin-top: 20px;
+}
+
+.signed-out-masthead .shot-content .user-credit-link {
+  color: #9e9ea7;
+  text-decoration: underline;
+}
+
+/* !!! form */
+
+.form-sub {
+  display: inline-block;
+  padding: 10px 16px;
+  cursor: pointer;
+  border: none;
+  text-decoration: none;
+  background: #ea4c89;
+  border-radius: 8px;
+  color: #fff;
+  transition: all 200ms ease;
+  appearance: none;
+  position: relative;
+  outline: none;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  height: 40px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* !!! user-credit */
+
+.user-credit {
+  display: flex;
+  color: #9e9ea7;
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+  .container-large {
+    padding-left: 32px;
+    padding-right: 32px;
+    max-width: 1680px;
+  }
+
+  .signed-out-masthead {
+    height: 480px;
+    flex-direction: row;
+    padding-top: 0;
+    padding-bottom: 0;
+    justify-content: space-between;
+  }
+
+  .signed-out-masthead .text-content {
+    margin-top: 0;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .signed-out-masthead .text-content h1 {
+    font-size: 32px;
+    font-weight: 700;
+    line-height: 38px;
+  }
+
+  .signed-out-masthead .shot-content {
+    width: auto;
+    align-items: flex-end;
+  }
+
+  .signed-out-masthead .shot-content .shot-image {
+    width: 400px;
+    height: 266px;
+  }
+}
